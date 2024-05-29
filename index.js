@@ -5,8 +5,8 @@ const cors     = require('cors')
 const mongoose = require('mongoose')
 // const router   = require('.router/router')
 
-// let URL_ATLAS = process.env.URL_ATLAS || 'mongodb://127.0.0.1:27017/portfolio'
-let URL_ATLAS = 'mongodb+srv://asierpl210395:brocoli21@cluster1.teysfs4.mongodb.net/portfolio'
+let URL_ATLAS = process.env.URL_ATLAS || 'mongodb://127.0.0.1:27017/portfolio'
+// let URL_ATLAS = 'mongodb+srv://asierpl210395:brocoli21@cluster1.teysfs4.mongodb.net/portfolio'
 
 const app = express()
 
