@@ -12,8 +12,7 @@ const getHome = async (req , res , next) => {
 
         const datos = { headerNav  }
         
-        // res.status(200).json(datos)
-        res.json(JSON.stringify({URL_ATLAS}))
+        res.status(200).json(datos)
 
     } catch(error) {
         next(error)
