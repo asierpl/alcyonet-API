@@ -16,8 +16,13 @@ const conectar = async () => await mongoose.connect(URL_ATLAS)
 
 conectar()
 
-app.get( '/' , (req , res , next)=>{
-    res.json('Holaaaaa')
+app.get( '/' , async (req , res , next)=>{
+
+    const headerNav = await HeaderNav.find()
+    const datos = { headerNav  }
+        
+        // res.status(200).json(datos)
+        res.json(JSON.stringify({URL_ATLAS}))
 })
 
 app.use( cors() )
