@@ -1,23 +1,23 @@
-const mongoose = require('mongoose')
+// const mongoose = require('mongoose')
 
-const {HeaderNav} = require("../schema/schema")
+// const {HeaderNav} = require("../schema/schema")
 
 
-const getHome = async (req , res , next) => {
+// const getHome = async (req , res , next) => {
 
-    try{
+//     try{
 
-        const headerNav = await HeaderNav.find()
-        // const inicio    = await Inicio.findOne()
+//         const headerNav = await HeaderNav.find()
+//         const inicio    = await Inicio.findOne()
 
-        const datos = { headerNav  }
+//         const datos = { headerNav  }
         
-        res.status(200).json(datos)
+//         res.status(200).json(datos)
 
-    } catch(error) {
-        next(error)
-    }
-}
+//     } catch(error) {
+//         next(error)
+//     }
+// }
 
 // const getProjects = async (req , res , next) => {
 
@@ -51,6 +51,6 @@ const getHome = async (req , res , next) => {
 //     }
 // }
 
-module.exports = {
-    getHome
-}
+// module.exports = {
+//     getHome
+// }
