@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const {HeaderNav} = require("../schema/schema")
+const {HeaderNav , About} = require("../schema/schema")
 
 
 const getHome = async (req , res , next) => {
@@ -8,7 +8,6 @@ const getHome = async (req , res , next) => {
     try{
 
         const headerNav = await HeaderNav.find()
-        // const inicio    = await Inicio.findOne()
 
         const datos = { headerNav }
         
@@ -25,7 +24,6 @@ const getProjects = async (req , res , next) => {
 
         const projects = await Projects.find()
         
-
         const datos = { projects }
         
         res.status(200).json(datos)
@@ -39,10 +37,9 @@ const getAbout = async (req , res , next) => {
 
     try{
 
-        const aboutImg  = await AboutImg.find()
-        const aboutText = await AboutText.find()
+        const about = await About.findOne()
         
-        const datos = { aboutImg , aboutText }
+        const datos = { about }
         
         res.status(200).json(datos)
 
