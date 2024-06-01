@@ -7,11 +7,12 @@ const headerNavSchema = new mongoose.Schema(
 )
 const HeaderNav = mongoose.model( 'HeaderNav' , headerNavSchema)
 
+
 const aboutSchema = new mongoose.Schema(
     { hrefYo : String , altYo : String , h2 : String , pA : String , pB : String , pC : String  },
     { collection : 'about' }
 )
-const About = mongoose.model(  'About' , aboutSchema )
+const About = mongoose.model( 'About' , aboutSchema )
 
 
 // const inicioSchema = new mongoose.Schema(
