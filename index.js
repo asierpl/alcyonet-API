@@ -3,7 +3,7 @@ console.clear()
 const express  = require('express')
 const cors     = require('cors')
 const mongoose = require('mongoose')
-const {router}   = require('./router/router')
+const {router}   = require('./Router/router')
 
 let URL_ATLAS = process.env.URL_ATLAS || 'mongodb://127.0.0.1:27017/portfolio'
 
