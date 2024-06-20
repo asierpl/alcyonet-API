@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const {HeaderNav , About} = require("../schema/schema")
+const {HeaderNav , About , Projects} = require("../schema/schema")
 
 
 const getHome = async (req , res , next) => {
